@@ -5,12 +5,9 @@
         "outDir": "dist",
         "sourceMap": true,
         "moduleResolution": "node",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "experimentalDecorators": true
     },
-    "files": [
-        "./node_modules/@types/mocha/index.d.ts",
-        "./node_modules/@types/node/index.d.ts"
-    ],
     "include": [
         "src/**/*.ts"
     ],

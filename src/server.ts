@@ -1,8 +1,13 @@
 import express, { Request, Response } from 'express'
+import { initialize, sequelize } from './sequelize'
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+app.use(express.json());
+
+(async () => {
+    await initialize(sequelize)
+})();
 
 app.get("/", (req: Request, res: Response) => {
     res.send("nice")
