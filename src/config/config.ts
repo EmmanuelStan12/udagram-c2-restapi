@@ -12,8 +12,6 @@ export const config = {
         "port": process.env.AWS_PORT
     },
     jwt: {
-        secret: ""
+        secret: process.env.AWS_TOKEN
     }
 }
-
-console.log(process.env)
